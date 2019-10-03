@@ -39,7 +39,7 @@ RUN grafana-cli plugins install natel-discrete-panel
 # Install Tesla API Scraper
 RUN apt-get -y install python3-pip
 WORKDIR /
-RUN git clone https://github.com/lephisto/tesla-apiscraper
+RUN git clone https://github.com/ashwinshastry/tesla-apiscraper
 RUN pip3 install influxdb
 
 RUN git clone https://github.com/tkrajina/srtm.py
